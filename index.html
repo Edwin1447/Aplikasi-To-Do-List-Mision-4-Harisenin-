@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   <div class="container">
+    <div class="profile">
+        <img src="/Avatar 1.png" alt="avatar" class="avatar">
+        <div class="info">
+            <h2>Edwin Aprizal</h2>
+            <p>Software Engineer</p>
+        </div>
+        <div class="date" id="todayDate"></div>
+    </div>
+
+    <h1>Tugas</h1>
+
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Menulis task di sini...">
+        <input type="date" id="deadlineInput">
+        <select id="prioritySelect">
+            <option value="Rendah">Prioritas Rendah</option>
+            <option value="Medium">Priorotas Medium</option>
+            <option value="Tinggi">Prioritas Tinggi</option>
+        </select>
+        <button onclick="addTask()">Tambah Tugas</button>
+    </div>
+
+    <h2>Daftar Tugas</h2>
+    <ul id="taskList"></ul>
+
+    <h2 style="color: red;">Tugas Terlambat</h2>
+    <ul id="overdueList"></ul>
+
+    <h2>Tugas Selesai</h2>
+    <ul id="doneList"></ul>
+
+    <button class="delete-btn" onclick="clearTask()">Hapus Semua</button>
+   </div>
+
+   <script src="/script.js"></script>
+</body>
+</html>
